@@ -8,6 +8,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.nav-to-other {
+.bg-blue-ti {
   background-color: #192f59;
+}
+
+.bg-grey {
+  background-color: #1f1f1f;
 }
