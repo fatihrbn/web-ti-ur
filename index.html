@@ -20,7 +20,7 @@
   </head>
   <body>
     <!-- HEADER START-->
-    <header class="container-fluid p-0">
+    <header class="container-fluid p-0 fw-medium">
       <nav class="container-fluid nav-to-other">
         <ul
           class="container list-group list-group-flush list-group-horizontal rounded-0 flex align-items-center justify-content-end"
@@ -57,48 +57,52 @@
         </ul>
       </nav>
 
-      <nav
-        class="container p-2 flex-column align-items-center justify-content-between"
-      >
-        <a href="" class="w-auto">
-          <img src="Assets/img/logo-ti-3.jpg" alt="" />
-        </a>
-        <ul
-          class="list-group list-group-flush list-group-horizontal rounded-0 flex align-items-center justify-content-end"
-        >
-          <a
-            href="#"
-            class="list-group-item list-group-item-action rounded-0 w-auto bg-transparent border-0 p-3 text-dark"
-            >Universitas</a
+      <nav class="container navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="Assets/img/logo-ti-3.jpg" alt="logo-ti-3" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-
-          <a
-            href="#"
-            class="list-group-item list-group-item-action rounded-0 w-auto bg-transparent border-0 p-3 text-dark"
-            >Fakultas</a
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
           >
-
-          <a
-            href="#"
-            class="list-group-item list-group-item-action rounded-0 w-auto bg-transparent border-0 p-3 text-dark"
-            >Jurusan</a
-          >
-
-          <a
-            href="#"
-            class="list-group-item list-group-item-action rounded-0 w-auto bg-transparent border-0 p-3 text-dark"
-            >Unduh Brosur</a
-          >
-
-          <a
-            href="#"
-            class="list-group-item list-group-item-action rounded-0 w-auto bg-transparent border-0 p-3 text-dark"
-            >Pendaftaran</a
-          >
-        </ul>
+            <div class="navbar-nav fw-medium align-items-center">
+              <a class="nav-link text-dark p-4" href="#">Beranda</a>
+              <a class="nav-link text-dark p-4" href="#">Profil</a>
+              <a class="nav-link text-dark p-4" href="#">Akademik</a>
+              <a class="nav-link text-dark p-4" href="#">TUK</a>
+              <a class="nav-link text-dark p-4" href="#">Galeri</a>
+              <a class="nav-link text-dark p-4" href="#">Kontak</a>
+              <a class="nav-link text-dark" href="#">
+                <img src="Assets/icon/search.png" alt="search" width="24" />
+              </a>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
     <!-- HEADER END -->
+
+    <!-- JUMBOTRON START -->
+    <img src="Assets/img/banner-1.jpg" alt="banner" class="img-fluid" />
+    <!-- JUMBTORON END -->
+
+    <!-- BERITA & EVENT START -->
+    <section class="container pt-4 pb-4">
+      <h2 class="text-dark fw-bold">Berita & Event</h2>
+    </section>
+    <!-- BERITA & EVENT END -->
 
     <!-- BOOTSTRAP SCRIPT START -->
     <script
