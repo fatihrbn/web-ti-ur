@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teknik Informatika UR</title>
+    <title>Teknik Informatika - Universitas Riau</title>
+
+    <!-- TITLE ICON START -->
+    <link rel="icon" type="image/png" href="Assets/img/logo-unri.png" />
+    <!-- TITLE ICON END -->
     <!-- BOOTSTRAP CDN START -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
@@ -33,19 +37,39 @@
       <div class="container justify-content-end">
         <ul class="navbar-nav align-items-center">
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Universitas</a>
+            <a
+              class="nav-link text-light"
+              href="https://unri.ac.id/"
+              target="_blank"
+              >Universitas</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Fakultas</a>
+            <a
+              class="nav-link text-light"
+              href="https://ft.unri.ac.id/"
+              target="_blank"
+              >Fakultas</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Jurusan</a>
+            <a
+              class="nav-link text-light"
+              href="https://ee.ft.unri.ac.id/"
+              target="_blank"
+              >Jurusan</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link text-light" href="#">Unduh Brosur</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Pendaftaran</a>
+            <a
+              class="nav-link text-light"
+              href="https://pmb.unri.ac.id/"
+              target="_blank"
+              >Pendaftaran</a
+            >
           </li>
         </ul>
       </div>
@@ -55,11 +79,15 @@
     >
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="Assets/img/new-header-logo-ti-white.png" alt="logo-ti-3" />
+          <img
+            src="Assets/img/new-header-logo-ti-white.png"
+            alt="logo-ti-3"
+            id="header-logo"
+          />
         </a>
 
         <button
-          class="navbar-toggler"
+          class="navbar-toggler border-0"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
@@ -89,9 +117,47 @@
     </nav>
     <!-- HEADER END -->
 
-    <!-- JUMBOTRON START -->
-    <img src="Assets/img/banner-1.jpg" alt="banner" class="img-fluid" />
-    <!-- JUMBTORON END -->
+    <!-- CAROUSEL START -->
+
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Assets/img/banner-1.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="Assets/img/banner-2.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="Assets/img/banner-3.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="Assets/img/banner-4.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- CAROUSEL END -->
 
     <!-- BERITA & EVENT START -->
     <section class="container pt-4 pb-4 vh-100">
@@ -99,13 +165,82 @@
     </section>
     <!-- BERITA & EVENT END -->
 
+    <!-- POSTER START -->
+    <!-- <section class="container pt-4 pb-4 vh-100">
+      <h2 class="text-dark fw-bold">Poster Mahasiswa</h2>
+    </section> -->
+    <!-- POSTER END -->
+
+    <!-- KEMITRAAN START -->
+    <section class="container pt-4 pb-4">
+      <h2 class="text-dark fw-bold mb-5">Kemitraan</h2>
+      <div class="row">
+        <div class="col-md-3 d-flex justify-content-center pb-4">
+          <img src="Assets/img/logo-bps-1.jpg" alt="" / width="150">
+        </div>
+        <div class="col-md-3 d-flex justify-content-center pb-4">
+          <img src="Assets/img/logo-cisco.jpg" alt="" / width="150" >
+        </div>
+        <div class="col-md-3 d-flex justify-content-center pb-4">
+          <img src="Assets/img/logo-esri-1.jpg" alt="" / width="150">
+        </div>
+        <div class="col-md-3 d-flex justify-content-center pb-4">
+          <img src="Assets/img/logo-kemenkominfo.jpg" alt="" / width="150">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 d-flex justify-content-center pb-4">
+          <img src="Assets/img/logo-mikrotik.jpg" alt="" / width="150">
+        </div>
+        <div class="col-md-3 d-flex justify-content-center pb-4">
+          <img src="Assets/img/logo-microsoft.jpg" alt="" / width="150" >
+        </div>
+        <div class="col-md-3 d-flex justify-content-center pb-4">
+          <img src="Assets/img/logo-oracle.jpg" alt="" / width="150">
+        </div>
+        <div class="col-md-3 d-flex justify-content-center pb-4">
+          <img src="Assets/img/logo-redhat-1.jpg" alt="" / width="150">
+        </div>
+      </div>
+    </section>
+    <!-- KEMITRAAN END -->
+
+    <!-- FOOTER START -->
+    <footer class="bg-grey">
+      <div class="container py-4 h-100">
+        <div class="row text-light h-100">
+          <div class="col-md-4 my-2">
+            <h5 class="mb-3">Kontak</h5>
+            <p class="">
+              Gedung C lantai 2 <br />
+              Fakultas Teknik Universitas Riau <br />
+              Kampus Binawidya <br />
+              Jl. HR Soebrantas KM. 12.5, <br />
+              Simpang Baru, Binawidya, <br />
+              Pekanbaru - 28293 <br />
+              E-mail: informatika@eng.unri.ac.id
+            </p>
+          </div>
+          <div class="col-md-4 my-2">
+            <h5>S1 Teknik Informatika</h5>
+          </div>
+          <div
+            class="col-4 d-flex align-items-center justify-content-center my-2"
+          >
+            <img src="Assets/img/akreditasi-ti-b.png" alt="akreditasi-ti-b" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
     <!-- BOOTSTRAP SCRIPT START -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    <script
+    <!-- <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
       integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
       crossorigin="anonymous"
@@ -114,7 +249,7 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
       integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <!-- BOOTSTRAP SCRIPT END -->
   </body>
 </html>
