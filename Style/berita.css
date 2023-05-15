@@ -1,0 +1,12 @@
+.berita-box {
+  margin-bottom: 28px;
+}
+
+.berita-box img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.berita-box p {
+  font-size: 18px;
+}

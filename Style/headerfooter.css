@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+.bg-blue-ti {
+  background-color: #192f59;
+}
+
+.bg-grey {
+  /* background-color: #1f1f1f; */
+  background-color: #181818;
+}
+
+@media only screen and (max-width: 992px) {
+  #header-logo {
+    width: 180px;
+  }
+}
