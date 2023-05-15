@@ -8,6 +8,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+a {
+  color: inherit;
+}
+
+.card-img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
 .bg-blue-ti {
   background-color: #192f59;
 }
@@ -15,6 +24,20 @@ body {
 .bg-grey {
   /* background-color: #1f1f1f; */
   background-color: #181818;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-mask-image: linear-gradient(180deg, #161616 1%, transparent);
+}
+
+.overlay:hover {
+  -webkit-mask-image: none;
 }
 
 @media only screen and (max-width: 992px) {
