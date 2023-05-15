@@ -18,16 +18,16 @@
     />
     <!-- BOOTSTRAP CDN END -->
 
-    <!-- CSS STYLE LINK START -->
-    <link rel="stylesheet" href="Style/index.css" />
-    <!-- CSS STYLE LINK END -->
-
     <!-- ICON LINK START -->
     <script
       src="https://kit.fontawesome.com/63c55d61d5.js"
       crossorigin="anonymous"
     ></script>
     <!-- ICON LINK END -->
+
+    <!-- CSS LINK START -->
+    <link rel="stylesheet" href="Style/virtual-tour.css" />
+    <!-- CSS LINK END -->
   </head>
   <body>
     <!-- HEADER START-->
@@ -78,7 +78,7 @@
       class="container-fluid navbar navbar-expand-lg pt-1 pb-1 sticky-top bg-blue-ti"
     >
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img
             src="Assets/img/new-header-logo-ti-white.png"
             alt="logo-ti-3"
@@ -102,8 +102,8 @@
           id="navbarNavAltMarkup"
         >
           <div class="navbar-nav fw-bold align-items-center">
-            <a class="nav-link p-4 text-light" href="#">Beranda</a>
-            <a class="nav-link p-4 text-light" href="profile.html">Profil</a>
+            <a class="nav-link p-4 text-light" href="index.html">Beranda</a>
+            <a class="nav-link p-4 text-light" href="#">Profil</a>
             <a class="nav-link p-4 text-light" href="#">Akademik</a>
             <a class="nav-link p-4 text-light" href="#">TUK</a>
             <a class="nav-link p-4 text-light" href="virtual-tour.html"
@@ -118,137 +118,76 @@
       </div>
     </nav>
     <!-- HEADER END -->
+<!-- profile start-->
 
-    <!-- CAROUSEL START -->
-
-    <div
-      id="carouselExampleAutoplaying"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="Assets/img/banner-1.jpg" class="d-block w-100" alt="..." />
+    <div class="container">
+      <h1>Profil Dosen</h1>
+      <hr>
+  
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="Assets/img/foto dosen/pp-dm.jpg" alt="Foto Profil">
+            <div class="card-body">
+              <h5 class="card-title text-center">Dr. Dahliyusmanto S.Kom., M.Sc.</h5>
+              <p class="card-text text-center">
+                <strong>Pendidikan:</strong>S1-Universitas Putra Indonesia  S2-Universiti Teknologi Malaysia  S3-Universiti Teknologi Malaysia<br>
+                <strong>Bidang Keahlian:</strong> Computer and Network Security
+                Data Mining
+                Image Processing                
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="carousel-item">
-          <img src="Assets/img/banner-2.jpg" class="d-block w-100" alt="..." />
+  
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="Assets/img/foto dosen/pp-dr.jpg" alt="Foto Profil">
+            <div class="card-body">
+              <h5 class="card-title text-center">Dian Ramadhani, S.T., M.T.</h5>
+              <p class="card-text text-center">
+                <strong >Pendidikan:</strong>
+                S1-Universitas Islam Negeri Sultan Syarif Kasim
+                S2-Institut Teknologi Bandung
+                <br>
+                <strong>Bidang Keahlian:</strong> Data Mining
+                Data Warehouse
+                Business Intelligence
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="carousel-item">
-          <img src="Assets/img/banner-3.jpg" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="Assets/img/banner-4.jpg" class="d-block w-100" alt="..." />
+  
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="Assets/img/foto dosen/pp-ed.jpg" alt="Foto Profil">
+            <div class="card-body">
+              <h5 class="card-title text-center">Edi Susilo, S.Pd., M.Kom., M.Eng.</h5>
+              <p class="card-text text-center" >
+                <strong>Pendidikan:</strong>S1-Universitas Negeri Yogyakarta
+                S2-Universitas Amikom Yogyakarta
+                S2-Universitas Gadjah Mada<br>
+                <strong>Bidang Keahlian:</strong>Software Engineering
+                Human-Computer Interaction
+                UI/UX
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
-    <!-- CAROUSEL END -->
-
-    <!-- BERITA & EVENT START -->
-    <section class="container pt-4 pb-4">
-      <h2 class="text-dark fw-bold mb-4">Berita & Event</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <a href="post-1.html" class="w-100">
-            <div class="card text-bg-dark border-0">
-              <img src="Assets/img/post-1.jpg" class="card-img" alt="..." />
-              <div class="overlay rounded-2"></div>
-              <div class="card-img-overlay bg-transparent">
-                <h5 class="card-title">
-                  Ani Mardhatillah, mahasiswa Teknik Informatika Juara 1 lomba
-                  MTQ kecamatan
-                </h5>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a href="post-1.html" class="w-100">
-            <div class="card text-bg-dark border-0">
-              <img src="Assets/img/post-2.jpg" class="card-img" alt="..." />
-              <div class="overlay rounded-2"></div>
-              <div class="card-img-overlay bg-transparent">
-                <h5 class="card-title">
-                  Prof Azriyenni Guru Besar Teknik Elektro Pertama di Riau
-                </h5>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a href="post-1.html" class="w-100">
-            <div class="card text-bg-dark border-0">
-              <img src="Assets/img/post-3.jpg" class="card-img" alt="..." />
-              <div class="overlay rounded-2"></div>
-
-              <div class="card-img-overlay bg-transparent">
-                <h5 class="card-title">
-                  [EVENT] KULIAH UMUM : Data Analytics for Health Sector
-                </h5>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- BERITA & EVENT END -->
-
-    <!-- POSTER START -->
-    <!-- <section class="container pt-4 pb-4 vh-100">
-      <h2 class="text-dark fw-bold">Poster Mahasiswa</h2>
-    </section> -->
-    <!-- POSTER END -->
-
-    <!-- KEMITRAAN START -->
-    <section class="container pt-4 pb-4">
-      <h2 class="text-dark fw-bold mb-5">Kemitraan</h2>
-      <div class="row">
-        <div class="col-md-3 d-flex justify-content-center pb-4">
-          <img src="Assets/img/logo-bps-1.jpg" alt="" / width="150">
-        </div>
-        <div class="col-md-3 d-flex justify-content-center pb-4">
-          <img src="Assets/img/logo-cisco.jpg" alt="" / width="150" >
-        </div>
-        <div class="col-md-3 d-flex justify-content-center pb-4">
-          <img src="Assets/img/logo-esri-1.jpg" alt="" / width="150">
-        </div>
-        <div class="col-md-3 d-flex justify-content-center pb-4">
-          <img src="Assets/img/logo-kemenkominfo.jpg" alt="" / width="150">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 d-flex justify-content-center pb-4">
-          <img src="Assets/img/logo-mikrotik.jpg" alt="" / width="150">
-        </div>
-        <div class="col-md-3 d-flex justify-content-center pb-4">
-          <img src="Assets/img/logo-microsoft.jpg" alt="" / width="150" >
-        </div>
-        <div class="col-md-3 d-flex justify-content-center pb-4">
-          <img src="Assets/img/logo-oracle.jpg" alt="" / width="150">
-        </div>
-        <div class="col-md-3 d-flex justify-content-center pb-4">
-          <img src="Assets/img/logo-redhat-1.jpg" alt="" / width="150">
-        </div>
-      </div>
-    </section>
-    <!-- KEMITRAAN END -->
+  <style>
+    .col-md-4{
+        margin:  20px 0;
+    }
+  </style>
+    <!-- Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+<!-- profile end-->
+    
 
     <!-- FOOTER START -->
     <footer class="bg-grey">
@@ -292,7 +231,7 @@
             </div>
           </div>
           <div
-            class="col-md-4 d-flex align-items-center justify-content-center my-2"
+            class="col-4 d-flex align-items-center justify-content-center my-2"
           >
             <img src="Assets/img/akreditasi-ti-b.png" alt="akreditasi-ti-b" />
           </div>
