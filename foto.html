@@ -60,7 +60,7 @@
         .gallery-item img {
           display: block;
           width: 100%;
-          height: auto;
+          height: 100%;
           transition: transform 0.3s ease-in-out;
         }
     
@@ -74,16 +74,16 @@
     
         .modal .modal-dialog .modal-content .modal-body img {
           width: 100%;
-          height: auto;
+          height: 100%;
         }
     
-        @media (max-width: 767px) {
+        @media (max-width: 100%) {
           .gallery {
             grid-template-columns: repeat(2, 1fr);
           }
         }
     
-        @media (max-width: 480px) {
+        @media (max-width: 100%) {
           .gallery {
             grid-template-columns: 1fr;
           }
@@ -187,13 +187,16 @@
     <div class="container">
       <div class="gallery">
         <div class="gallery-item">
-          <img src="Assets/img/foto dosen/pp-dm.jpg" alt="Image 1" data-bs-toggle="modal" data-bs-target="#modal1">
+          <img src="Assets/img/gedung c.jpg" alt="Image 1" data-bs-toggle="modal" data-bs-target="#modal1">
         </div>
         <div class="gallery-item">
-          <img src="Assets/img/foto dosen/pp-dn.jpg" alt="Image 2" data-bs-toggle="modal" data-bs-target="#modal2">
+          <img src="Assets/img/gedung c2.jpg" alt="Image 2" data-bs-toggle="modal" data-bs-target="#modal2">
         </div>
         <div class="gallery-item">
-          <img src="Assets/img/foto dosen/pp-dr.jpg" alt="Image 3" data-bs-toggle="modal" data-bs-target="#modal3">
+          <img src="Assets/img/fakultas teknik.jpg" alt="Image 3" data-bs-toggle="modal" data-bs-target="#modal3">
+        </div>
+        <div class="gallery-item">
+          <img src="Assets/img/gedung c3.jpg" alt="Image 4" data-bs-toggle="modal" data-bs-target="#modal4">
         </div>
         <!-- Add more gallery items here -->
       </div>
@@ -204,7 +207,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-body">
-            <img src="Assets/img/foto dosen/pp-dm.jpg" alt="Image 1">
+            <img src="Assets/img/gedung c.jpg" alt="Image 1">
           </div>
         </div>
       </div>
@@ -215,7 +218,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-body">
-            <img src="Assets/img/foto dosen/pp-dn.jpg" alt="Image 2">
+            <img src="Assets/img/gedung c2.jpg" alt="Image 2">
           </div>
         </div>
       </div>
@@ -227,7 +230,19 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-body">
-            <img src="Assets/img/foto dosen/pp-dr.jpg" alt="Image 3">
+            <img src="Assets/img/fakultas teknik.jpg" alt="Image 3">
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Modal 4 -->
+   
+   <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img src="Assets/img/gedung c3.jpg" alt="Image 4">
           </div>
         </div>
       </div>
