@@ -28,6 +28,76 @@
       crossorigin="anonymous"
     ></script>
     <!-- ICON LINK END -->
+
+    <!-- CSS POP UP MENU START -->
+    <style>
+      .navbar-nav .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        display: none;
+        float: left;
+        min-width: 10rem;
+        padding: 0.5rem 0;
+        margin: 0.125rem 0 0;
+        font-size: 1rem;
+        color: #212529;
+        text-align: left;
+        list-style: none;
+        background-color: #ffffff4f;
+        background-clip: padding-box;
+        border: 1px solid rgb(43, 42, 42);
+        border-radius: 0.5rem;
+        
+      }
+  
+      .navbar-nav .dropdown-menu .dropdown-item {
+        padding: 0.5rem 1rem;
+        clear: both;
+        font-weight: 400;
+        color: #212529;
+        text-align: inherit;
+        white-space: nowrap;
+        background-color: transparent;
+        border: 0;
+        border-radius: 0.5rem;
+        
+      }
+  
+      .navbar-nav .dropdown-menu a.dropdown-toggle::after {
+        display: none;
+      }
+  
+      .navbar-nav .nav-link.dropdown-toggle.active {
+        color: #007bff;
+      }
+  
+      .navbar-nav .nav-link.dropdown-toggle.active::after {
+        display: inline-block;
+        margin-left: .255em;
+        vertical-align: .255em;
+        content: "";
+        border-top: .3em solid;
+        border-right: .3em solid transparent;
+        border-bottom: 0;
+        border-left: .3em solid transparent;
+      }
+  
+      /* Tambahkan kelas CSS berikut */
+      .navbar-nav .dropdown-menu .dropdown-item.selected {
+        background-color: #007bff;
+        color: #fff;
+        border: 1px solid rgb(243, 242, 242);
+      }
+  
+      .navbar-nav .dropdown-menu .dropdown-item:hover {
+        background-color: #007bff;
+        color: #fff;
+        border: 1px solid rgb(255, 255, 255);
+      }
+    </style>
+    <!-- CSS POP UP MENU START -->
   </head>
   <body>
     <!-- HEADER START-->
@@ -103,7 +173,22 @@
         >
           <div class="navbar-nav fw-bold align-items-center">
             <a class="nav-link p-4 text-light" href="#">Beranda</a>
-            <a class="nav-link p-4 text-light" href="profile.html">Profil</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil</a>
+              <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+                <li><a class="dropdown-item" href="sejarah.html">Sejarah</a></li>
+                <li><a class="dropdown-item" href="visidanmisi.html">Visi dan Misi</a></li>
+                <li><a class="dropdown-item" href="tujuan.html">Tujuan</a></li>
+                <li><a class="dropdown-item" href="sasaran.html">Sasaran</a></li>
+                <li><a class="dropdown-item" href="strategi.html">Strategi</a></li>
+                <li><a class="dropdown-item" href="akreditasi.html">Akreditasi</a></li>
+                <li><a class="dropdown-item" href="dosen.html">Dosen</a></li>
+                <li><a class="dropdown-item" href="tenagapendidik.html">Tenaga Kependidikan</a></li>
+                <li><a class="dropdown-item" href="lap-rpl.html">Lap. RPL</a></li>
+                <li><a class="dropdown-item" href="lap-jarkom.html">Lap. Jarkom</a></li>
+              </ul>
+            </li>
+
             <a class="nav-link p-4 text-light" href="#">Akademik</a>
             <a class="nav-link p-4 text-light" href="#">TUK</a>
             <a class="nav-link p-4 text-light" href="foto.html">Galeri</a>
@@ -118,6 +203,52 @@
         </div>
       </div>
     </nav>
+
+  <script>
+    const profileDropdown = document.getElementById('profileDropdown');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    const dropdownItems = document.querySelectorAll('.dropdown-item');
+
+    let isMouseOverDropdown = false;
+
+    profileDropdown.addEventListener('mouseenter', function() {
+      dropdownMenu.style.display = 'block';
+    });
+
+    profileDropdown.addEventListener('mouseleave', function() {
+      setTimeout(function() {
+        if (!isMouseOverDropdown) {
+          dropdownMenu.style.display = 'none';
+        }
+      }, 200);
+    });
+
+    dropdownMenu.addEventListener('mouseenter', function() {
+      isMouseOverDropdown = true;
+    });
+
+    dropdownMenu.addEventListener('mouseleave', function() {
+      isMouseOverDropdown = false;
+      dropdownMenu.style.display = 'none';
+    });
+
+    dropdownItems.forEach(function(item) {
+      item.addEventListener('mouseenter', function() {
+        this.classList.add('selected');
+      });
+
+      item.addEventListener('mouseleave', function() {
+        this.classList.remove('selected');
+      });
+
+      item.addEventListener('click', function() {
+        dropdownItems.forEach(function(item) {
+          item.classList.remove('selected');
+        });
+        this.classList.add('selected');
+      });
+    });
+  </script>
     <!-- HEADER END -->
 
     <!-- CAROUSEL START -->
