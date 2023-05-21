@@ -5,6 +5,7 @@
 .berita-box img {
   aspect-ratio: 16/9;
   object-fit: cover;
+  margin-bottom: 8px;
 }
 
 .berita-box p {
