@@ -29,6 +29,10 @@
     <link rel="stylesheet" href="Style/virtual-tour.css" />
     <!-- CSS LINK END -->
 
+    <!-- CSS POP UP MENU START -->
+    <link rel="stylesheet" href="Style/popupmenu.css">
+    <!-- CSS POP UP MENU START -->
+
     <!-- CSS GALERI START -->
     <style>
         body {
@@ -165,14 +169,29 @@
           id="navbarNavAltMarkup"
         >
           <div class="navbar-nav fw-bold align-items-center">
-            <a class="nav-link p-4 text-light" href="index.html">Beranda</a>
-            <a class="nav-link p-4 text-light" href="#">Profil</a>
+           <a class="nav-link p-4 text-light" href="index.html">Beranda</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil</a>
+              <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+                <li><a class="dropdown-item" href="sejarah.html">Sejarah</a></li>
+                <li><a class="dropdown-item" href="visidanmisi.html">Visi dan Misi</a></li>
+                <li><a class="dropdown-item" href="tujuan.html">Tujuan</a></li>
+                <li><a class="dropdown-item" href="sasaran.html">Sasaran</a></li>
+                <li><a class="dropdown-item" href="strategi.html">Strategi</a></li>
+                <li><a class="dropdown-item" href="akreditasi.html">Akreditasi</a></li>
+                <li><a class="dropdown-item" href="dosen.html">Dosen</a></li>
+                <li><a class="dropdown-item" href="tenagapendidik.html">Tenaga Kependidikan</a></li>
+                <li><a class="dropdown-item" href="lap-rpl.html">Lap. RPL</a></li>
+                <li><a class="dropdown-item" href="lap-jarkom.html">Lap. Jarkom</a></li>
+              </ul>
+            </li>
             <a class="nav-link p-4 text-light" href="#">Akademik</a>
             <a class="nav-link p-4 text-light" href="#">TUK</a>
+            <a class="nav-link p-4 text-light" href="foto.html">Galeri</a>
             <a class="nav-link p-4 text-light" href="virtual-tour.html"
               >Virtual Tour</a
             >
-            <a class="nav-link p-4 text-light" href="#">Kontak</a>
+            <a class="nav-link p-4 text-light" href="kontak.html">Kontak</a>
             <a class="nav-link d-none d-lg-block" href="#">
               <i class="fas fa-search fa-lg" style="color: #ffffff"></i>
             </a>
@@ -180,6 +199,9 @@
         </div>
       </div>
     </nav>
+
+    <script src="popupmenu.js"></script>
+
     <!-- HEADER END -->
 
     <!-- FOTO START -->
