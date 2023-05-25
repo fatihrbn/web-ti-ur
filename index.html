@@ -107,22 +107,22 @@
           id="navbarNavAltMarkup"
         >
           <div class="navbar-nav fw-bold align-items-center">
-            <a class="nav-link p-4 text-light" href="#">Beranda</a>
+            <button class="btn btn-primary dropdown-toggle" onclick="window.location.href='index.html'" type="button">Beranda</button>
             <div class="dropdown dropdown-hover">
               <button class="btn btn-primary dropdown-toggle" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                 Profile
               </button>
               <ul class="dropdown-menu" aria-labelledby="profileDropdown">
-                <li><a class="dropdown-item" href="https://www.example1.com">Sejarah</a></li>
-                <li><a class="dropdown-item" href="https://www.example2.com">Visi dan Misi</a></li>
-                <li><a class="dropdown-item" href="https://www.example3.com">Tujuan</a></li>
-                <li><a class="dropdown-item" href="https://www.example1.com">Sasaran</a></li>
-                <li><a class="dropdown-item" href="https://www.example2.com">Strategi</a></li>
-                <li><a class="dropdown-item" href="https://www.example3.com">Akreditasi</a></li>
-                <li><a class="dropdown-item" href="https://www.example1.com">Dosen</a></li>
-                <li><a class="dropdown-item" href="https://www.example2.com">Tenaga Kependidikan</a></li>
-                <li><a class="dropdown-item" href="https://www.example3.com">Lap. RPL</a></li>
-                <li><a class="dropdown-item" href="https://www.example3.com">Lap. Jarkom</a></li>
+                <li><a class="dropdown-item" href="sejarah.html">Sejarah</a></li>
+                <li><a class="dropdown-item" href="visidanmisi.html">Visi dan Misi</a></li>
+                <li><a class="dropdown-item" href="tujuan.html">Tujuan</a></li>
+                <li><a class="dropdown-item" href="sasaran.html">Sasaran</a></li>
+                <li><a class="dropdown-item" href="strategi.html">Strategi</a></li>
+                <li><a class="dropdown-item" href="akreditasi.html">Akreditasi</a></li>
+                <li><a class="dropdown-item" href="dosen.html">Dosen</a></li>
+                <li><a class="dropdown-item" href="tenagapendidik.html">Tenaga Kependidikan</a></li>
+                <li><a class="dropdown-item" href="lap-rpl.html">Lap. RPL</a></li>
+                <li><a class="dropdown-item" href="lap-jarkom.html">Lap. Jarkom</a></li>
               </ul>
             </div>
           
@@ -131,9 +131,9 @@
                 Akademik
               </button>
               <ul class="dropdown-menu" aria-labelledby="akademikDropdown">
-                <li><a class="dropdown-item" href="https://www.akademik1.com">Kalender Akademik</a></li>
-                <li><a class="dropdown-item" href="https://www.akademik2.com">Kurikulum</a></li>
-                <li><a class="dropdown-item" href="https://www.akademik3.com">Jadwal Kuliah</a></li>
+                <li><a class="dropdown-item" href="kalender-akademik.html">Kalender Akademik</a></li>
+                <li><a class="dropdown-item" href="kurikulum.html">Kurikulum</a></li>
+                <li><a class="dropdown-item" href="jadwal-kuliah.html">Jadwal Kuliah</a></li>
               </ul>
             </div>
           
@@ -142,21 +142,22 @@
                 Galeri
               </button>
               <ul class="dropdown-menu" aria-labelledby="galeriDropdown">
-                <li><a class="dropdown-item" href="https://www.galeri1.com">Foto</a></li>
-                <li><a class="dropdown-item" href="https://www.galeri2.com">Video</a></li>
-                <li><a class="dropdown-item" href="https://www.galeri3.com">Virtual Tour</a></li>
+                <li><a class="dropdown-item" href="foto.html">Foto</a></li>
+                <li><a class="dropdown-item" href="video.html">Video</a></li>
+                <li><a class="dropdown-item" href="virtual-tour.html">Virtual Tour</a></li>
                 <li><a class="dropdown-item" href="kontak.html">kontak</a></li>
               </ul>
             </div>
-            <a class="nav-link p-4 text-light" href="#">TUK</a>
-            <a class="nav-link d-none d-lg-block" href="#">
-              <i class="fas fa-search fa-lg" style="color: #ffffff"></i>
-            </a>
+            <button class="btn btn-primary dropdown-toggle" onclick="window.location.href='#'" type="button">TUK</button>
+            <div class="dropdown-search">
+              <input type="text" placeholder="Search">
+              <button class="btn btn-primary dropdown-toggle" type="button"><i class="fas fa-search search-icon"></i></button>
+            </div>
+          </div>
           </div>
         </div>
       </div>
     </nav>
-
     
     <!-- HEADER END -->
 

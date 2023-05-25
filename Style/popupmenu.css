@@ -1,87 +1,90 @@
-      .dropdown-toggle::after {
-        display: none;
-      }
-      
-      .dropdown-item:hover {
-        background-color: #f8f9fa;
-      }
-  
-      .dropdown-hover .dropdown-menu {
-        display: none;
-      }
-  
-      .dropdown-hover:hover .dropdown-menu {
-        display: block;
-      }
-  
-      .dropdown-toggle {
-        background-color: transparent;
-        border: none;
-      }
+.dropdown-toggle::after {
+  display: none;
+}
 
-      
-      .navbar-nav .dropdown-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        z-index: 1000;
-        display: none;
-        float: left;
-        min-width: 11rem;
-        padding: 0.5rem 0;
-        margin: 0.125rem 0 0;
-        font-size: 1rem;
-        color: #212529;
-        text-align: left;
-        list-style: none;
-        background-color: #ffffff4f;
-        background-clip: padding-box;
-        border: 1px solid rgb(43, 42, 42);
-        border-radius: 0.5rem;
-        
-      }
+.dropdown-item:hover {
+  background-color: #ffffff1e;
+  color: rgb(249, 249, 249);
+  transition: color 0.3s ease;
+  font-weight: bold;
   
-      .navbar-nav .dropdown-menu .dropdown-item {
-        padding: 0.5rem 1.5rem;
-        clear: both;
-        font-weight: 400;
-        color: #212529;
-        text-align: inherit;
-        white-space: nowrap;
-        background-color: transparent;
-        border: 0;
-        border-radius: 0.5rem;
-        
-      }
+}
+
+.dropdown-hover .dropdown-menu {
+  display: none;
   
-      .navbar-nav .dropdown-menu a.dropdown-toggle::after {
-        display: none;
-      }
+  background-color: rgba(255, 255, 255, 0.214);
+}
+
+.dropdown-hover:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  transition: color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold; /* Tambahkan ini untuk membuat font menjadi bold */
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
   
-      .navbar-nav .nav-link.dropdown-toggle.active {
-        color: #007bff;
-      }
-  
-      .navbar-nav .nav-link.dropdown-toggle.active::after {
-        display: inline-block;
-        margin-left: .255em;
-        vertical-align: .255em;
-        content: "";
-        border-top: .3em solid;
-        border-right: .3em solid transparent;
-        border-bottom: 0;
-        border-left: .3em solid transparent;
-      }
-  
-      /* Tambahkan kelas CSS berikut */
-      .navbar-nav .dropdown-menu .dropdown-item.selected {
-        background-color: #007bff;
-        color: #fff;
-        border: 1px solid rgb(243, 242, 242);
-      }
-  
-      .navbar-nav .dropdown-menu .dropdown-item:hover {
-        background-color: #007bff;
-        color: #fff;
-        border: 1px solid rgb(255, 255, 255);
-      }
+  background-color: transparent;
+  color: green;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  border-radius: none;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: transparent !important;
+}
+
+.dropdown-item.animate-slide {
+  position: relative;
+  animation: slideRight 0.3s;
+}
+
+@keyframes slideRight {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+} 
+.dropdown-search {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-search input[type="text"] {
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  background-color: #f8f9fa;
+  margin-left: 40px;
+}
+
+.dropdown-search button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-left: 5px;
+}
+
+.dropdown-search button:hover {
+  color: green;
+}
+
+.search-icon {
+  font-size: 18px;
+}
