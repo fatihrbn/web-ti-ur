@@ -33,6 +33,56 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="Style/popupmenu.css">
     <!-- CSS POP UP MENU START -->
+
+    <!-- CSS sejarah START -->
+    <style>
+      .jumbotron {
+    margin-top: 20px;
+    background-image: url('Assets/img/gedung c2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 254, 254);
+    padding: 50px;
+    border-radius: 10px;
+    border: 3px solid rgb(255, 255, 255);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .jumbotron img {
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .jumbotron h1 {
+    font-size: 46px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .jumbotron p {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .center {
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  border-top: none;
+  border-radius: 10px;
+  background-color: rgba(154, 60, 6, 0.434);
+  margin: 10px;
+  padding: 30PX;
+  font-size: larger;
+}
+.logo {
+  image-rendering: auto;
+    max-height: 150px;
+    width: auto;
+  }
+
+    </style>
+    <!-- CSS sejarah END -->
   </head>
   <body>
     <!-- HEADER START-->
@@ -161,27 +211,24 @@
 
     <!-- HEADER END -->
 
+
     <!-- KONTEN START -->
-    <div class="container py-5">
-      <div class="col">
-        <div class="col">
-            <div class="image-container">
-              <img src="Assets/img/gedung c2.jpg" alt="Universitas Riau" class="img-fluid mb-4">
-              <div class="header-text">
-                <h1>Akreditasi Prodi
-                    Teknik Informatika<h1>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <p>Program studi <span>S1 Teknik Informatika</span> Universitas Riau memiliki reputasi dalam pendidikannya. Hal ini terbukti dengan akreditasi serta sertifikat yang menjamin kualitas pendidikan serta pembelajarannya di program studi Teknik Informatika. Sertifikat akreditasi program studi S1 Teknik Informatika dapat dilihat disini :</p>
-          </div>
+   <div class="container">
+    <div class="jumbotron">
+      <img class="logo" src="Assets/img/logo-unri.png" alt="Logo Perusahaan" class="img-fluid">
+      <h1 class="display-4">Akreditasi</h1>
+      <p class="lead">Teknik Informatika</div>
+        </div>  
+       <div class="center">
+        <div class="col-md-6">
+          <h2>AKREDITASI PROGRAM STUDI TEKNIK INFORMATIKA</h2>
+          <p>Program studi <span style="color: rgb(0, 102, 255); font-weight: bold;">S1 Teknik Informatika</span> Universitas Riau memiliki reputasi dalam pendidikannya. Hal ini terbukti dengan akreditasi serta sertifikat yang menjamin kualitas pendidikan serta pembelajarannya di program studi Teknik Informatika. Sertifikat akreditasi program studi S1 Teknik Informatika dapat dilihat disini :</p>
         </div>
+       </div>
       </div>
-    
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- KONTEN END -->
+    </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- FOOTER START -->
     <footer class="bg-grey">
